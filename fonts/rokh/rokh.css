@@ -1,0 +1,59 @@
+@font-face {
+    font-family: "Rokh";
+    src :  url(./Rokh-Black.eot);
+    src : url(./Rokh-Bold.eot) format("embedded-opentype"),
+            url(./Rokh-Bold.woff2) format("woff2"),          
+            url(./Rokh-Bold.woff) format("woff"),
+            url(./Rokh-Bold.ttf) format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: "Rokh";
+    src :  url(Rokh-Normal.eot);
+    src : url(./Rokh-Normal.eot) format("embedded-opentype"),
+            url(./Rokh-Normal.woff2) format("woff2"),          
+            url(./Rokh-Normal.woff) format("woff"),
+            url(./Rokh-Normal.ttf) format("truetype");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: "Rokh";
+    src :  url(./Rokh-Black.eot);
+    src : url(./Rokh-Black.eot) format("embedded-opentype"),
+            url(./Rokh-Black.woff2) format("woff2"),          
+            url(./Rokh-Black.woff) format("woff"),
+            url(./Rokh-Black.ttf) format("truetype");
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "Rokh";
+    src :  url(./Rokh-Medium.eot);
+    src : url(./Rokh-Medium.eot) format("embedded-opentype"),
+            url(./Rokh-Medium.woff2) format("woff2"),          
+            url(./Rokh-Medium.woff) format("woff"),
+            url(./Rokh-Medium.ttf) format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Rokh";
+    src :  url(./Rokh-Light.eot);
+    src : url(./Rokh-Light.eot) format("embedded-opentype"),
+            url(./Rokh-Light.woff2) format("woff2"),          
+            url(./Rokh-Light.woff) format("woff"),
+            url(./Rokh-Light.ttf) format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Rokh";
+    src :  url(./Rokh-Thin.eot);
+    src : url(./Rokh-Thin.eot) format("embedded-opentype"),
+            url(./Rokh-Thin.woff2) format("woff2"),          
+            url(./Rokh-Thin.woff) format("woff"),
+            url(./Rokh-Thin.ttf) format("truetype");
+    font-weight: 100;
+}

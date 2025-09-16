@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+  font-family: Rokh , Vazir , 'Poppins';
+  font-size: 16px;
+}
+/* خط های دور دکمه ها */
+.Action_Buttun {
+    position: relative;
+    font-family: 'Poppins';
+    cursor: pointer;
+    /* background: transparent; */
+    overflow: hidden;
+    box-sizing: border-box;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+/* خطوط بالا و پایین */
+.Action_Buttun::before,
+.Action_Buttun::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 0;
+  background-color: #FFC224;
+  transition: width 0.4s ease;
+  z-index: 2; /* بالای پس‌زمینه، ولی پشت متن */
+}
+.Action_Buttun::before { top: 0; left: 0; }
+.Action_Buttun::after { bottom: 0; right: 0; }
+/* خطوط چپ و راست */
+.Action_Buttun span::before,
+.Action_Buttun span::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 0;
+  background-color: #FFC224;
+  transition: height 0.4s ease;
+  z-index: 2;
+}
+.Action_Buttun span::before { left: 0; top: 0; }
+.Action_Buttun span::after { right: 0; bottom: 0; }
+/* هاور */
+.Action_Buttun:hover::before,
+.Action_Buttun:hover::after {
+    width: 100%;
+}
+.Action_Buttun:hover span::before,
+.Action_Buttun:hover span::after {
+    height: 100%;
+}
+
+
+
+/* خط زیر منو ها */
+.menu-a {
+  position: relative;
+  display: inline-block;
+  /* color: black; */
+  font-weight: 500;
+
+}
+.menu-a::after {
+  content: "";
+  position: absolute;
+  right: 0;                 
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background-color: #FFC224;
+  transition: width 0.3s ease;
+}
+.menu-a:hover::after {
+  left: 0;                   
+  width: 100%;
+}
