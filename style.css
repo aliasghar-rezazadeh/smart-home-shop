@@ -5,7 +5,7 @@ body {
   font-size: 16px;
 }
 .baner {
-  height: 591px;
+  height: 610px;
   background-image: url('./images/scandinavian-interior-mockup-wall-decal-background1.png');
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -67,22 +67,94 @@ body {
   font-size: 20px;
   margin: 7px 0 25px 0;
 }
-.browse-the-range-div {
+
+.category-maim{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  margin: 65px 0 60px 0;
+}
+.categories {
+  gap: 32px;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
-}
-.browse-the-range-a{
-  margin: 0 20px;
-}
-.browse-the-range-a p{
-  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: 24px;
 }
-.browse-the-range-a img{
-  width: 407px;
-  height: 480px;
-  margin-bottom: 20px;
-  border-radius: 15px;
+.category-card {
+  display: flex;
+  position: relative;
+  width: 394px;
+  height: 212px;
+  overflow: hidden;
+  border-radius: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+}
+.category-image {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.category-image img {
+  width: 100%;
+  height: 100%;
+  /* object-fit: cover; */
+  transition: transform 0.5s ease;
+}
+.category-card:hover .category-image img {
+  transform: scale(1.1);
+}
+.category-card:hover .overlay{
+  background: rgba(0,0,0,0.4);
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.3);
+  transition: background 0.3s ease;
+}
+.category-content {
+  position: absolute;
+  bottom: 0px;
+  color: #fff;
+  z-index: 2;
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.category-content i {
+  font-size: 30px;
+}
+.category-content h3 {
+  margin: 0;
+  font-weight: bold;
+  font-size: 30px;
+}
+.category-content p{
+  font-size: 16px;
+}
+.category-content .category-cart{
+  font-size: 25px;
+  border-radius: 50%;
+  /* background-color: #fff3; */
+  background-color: #ffffff78;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

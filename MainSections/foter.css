@@ -60,7 +60,7 @@
   background: transparent;
   font-size: 14px;
 }
-.foter-section2 button {
+.foter-section2 .button {
   background: #ffc224;
   border: none;
   padding: 0 20px;
@@ -97,3 +97,5 @@
     padding: 10px;
     border-radius: 15px;
 }
+
+

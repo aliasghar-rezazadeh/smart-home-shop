@@ -10,62 +10,102 @@
   margin-bottom: 16px;
 }
 .div-cart-list {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: space-evenly;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
 }
 
 
 .div-cart {
-    border-radius: 5px;
-    margin: 16px;
-    background-color: #F4F5F7;
-    width: 285px;
-    /* height: 446px; */
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
+  border-radius: 5px;
+  margin: 16px;
+  background-color: #F4F5F7;
+  width: 285px;
+  /* height: 446px; */
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
 }
 .cart-string{
-    padding: 16px 16px 30px 16px;
-    
+  padding: 16px 16px 30px 16px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  
 }
 .name-cart{
-    font-size: 24px;
-    margin-bottom: 8px;
-    font-weight: bold;
+  font-size: 24px;
+  margin-bottom: 8px;
+  font-weight: bold;
 }
 .capshen-cart{
-    margin-bottom: 5px;
-    font-size: 16px ;
-    color: #898989;
-    margin-bottom: 8px;
+  margin-bottom: 5px;
+  font-size: 16px ;
+  color: #898989;
+  margin-bottom: 8px;
 }
 .price{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    justify-content: space-between;
-    font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 20px;
 }
 .img-cart{
-    width: 100%;
-    height: 301px;
-    display: block;
+  width: 100%;
+  height: 301px;
+  display: block;
 }
 .browse-button{
-    font-size: 16px;
-    width: 245px;
-    height: 48px;
-    color: #B88E2F;
-    background-color: white;
-    border: 2px solid #B88E2F;
-    margin-top: 16px;
+  font-size: 16px;
+  width: 245px;
+  height: 48px;
+  color: #B88E2F;
+  background-color: white;
+  border: 2px solid #B88E2F;
+  margin-top: 16px;
+}
+/* From Uiverse.io by andrew-demchenk0 */ 
+.rating{
+  margin: 3px 0 15px 0;
+}
+.rating:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+
+.rating:not(:checked) > label {
+  float: right;
+  cursor: pointer;
+  font-size: 20px;
+  color: #666;
+}
+
+.rating:not(:checked) > label:before {
+  content: '★';
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #e58e09;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ff9e0b;
+}
+
+.rating > input:checked ~ label {
+  color: #ffa723;
 }
 
 
@@ -95,16 +135,16 @@
 }
 /* دکمه نمایش */
 .btn-view {
-    color: #B88E2F;
-    background-color: white;
-    font-size: 16px;
-    width: 190px;
-    height: 48px;
-    cursor: pointer;
-    margin-bottom: 36px;
-    border: none;
-    font-family: 'poppins';
-    font-weight: bold;
+  color: #B88E2F;
+  background-color: white;
+  font-size: 16px;
+  width: 190px;
+  height: 48px;
+  cursor: pointer;
+  margin-bottom: 36px;
+  border: none;
+  font-family: 'poppins';
+  font-weight: bold;
 }
 /* آیکون‌ها */
 .cart-icons {
@@ -113,23 +153,23 @@
   color: white;
 }
 .icon {
-    font-size: 12px;
-    color: white;
-    cursor: pointer;
-    font-family: 'poppins';
+  font-size: 12px;
+  color: white;
+  cursor: pointer;
+  font-family: 'poppins';
 }
 .icon-info{
-    margin: 0 2px 2px 2px;
+  margin: 0 2px 2px 2px;
 }
 
 .status-cart{
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    background-color: #2EC1AC;
-    color: white;
-    border-radius: 12%;
-    opacity: 1;
-    padding: 7px;
-    font-family: 'poppins';
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #2EC1AC;
+  color: white;
+  border-radius: 12%;
+  opacity: 1;
+  padding: 7px;
+  font-family: 'poppins';
 }
