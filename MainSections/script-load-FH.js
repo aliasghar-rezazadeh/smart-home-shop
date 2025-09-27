@@ -1,6 +1,6 @@
 // هدر
 
-fetch("../MainSections/header.html")
+fetch("MainSections/header.html")
 .then(res => res.text())
 .then(data => {
     document.getElementById("header").innerHTML = data;
@@ -42,7 +42,7 @@ fetch("../MainSections/header.html")
 // فوتر
 
 const footer = document.getElementById("footer")
-fetch("../MainSections/footer.html")
+fetch("MainSections/footer.html")
 .then(res => res.text())
 .then(data =>{
     document.getElementById("footer").innerHTML = data;
