@@ -5,7 +5,6 @@ fetch("MainSections/header.html")
 .then(data => {
     document.getElementById("header").innerHTML = data;
 
-    // --- تمام کدهای JS هدر اینجا داخلش قرار بگیرن ---
     const hamburger = document.getElementById('hamburger');
     const mobileMenu = document.getElementById('mobile-menu');
 
