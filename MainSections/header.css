@@ -1,39 +1,219 @@
 body {
-  margin: 0;
-  font-family: sans-serif;
-  font-family: Rokh , Vazir , 'Poppins';
-  font-size: 16px;
-}
-.header{
-  background-color: #ffffff29;
-  backdrop-filter: blur(8px);
-  position: sticky;       
-  top: 0;
-  z-index: 1000;
-  font-size: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 100px ;
-  color: black;
-
-}
-.header-div-rtl{
-  display: flex;
-}
-.header-div-rtl p {
-  font-weight: bold;
-  font-size: 38px;
-  margin-top: 16px;
+    margin: 0;
+    font-family: sans-serif;
+    font-family: Rokh , Vazir , 'Poppins';
+    font-size: 16px;
 }
 
-.header-div-lef i {
-  margin: 22.5px;
+.header-main{
+    background-color: #ffffff29;
+    backdrop-filter: blur(8px);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+
 }
 
-.menu-header{
-  margin: 0 37.5px;
-  color: black;
+.header-container{
+    font-size: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 100px ;
+    color: black;
+    height: 60px;
+}
+    
+.logo{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    max-width: fit-content;
+}
+
+.logo p {
+    font-weight: bold;
+    font-size: 38px;
+    margin-top: 16px;
+}
+
+nav > .nav-menu{
+    max-width: fit-content;
+}
+.nav-menu {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.nav-menu li {
+    font-weight: 500;
+    margin: 0 37.5px;
+    /* margin: 0 15px; */
+    color: black;
+    min-width: fit-content;
+}
+
+.icons {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    max-width: fit-content;
+    /* margin: 22.5px */
+    cursor: pointer;
+}
+
+.icon-item {
+    margin-right: 20px;
+    font-size: 20px;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 5px;
+}
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    padding: 20px;
+}
+
+.mobile-menu.active {
+    display: block;
+}
+
+.mobile-menu ul {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.mobile-menu li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.mobile-menu a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    display: block;
+}
+
+.mobile-icons {
+    display: none;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.mobile-icon {
+    font-size: 24px;
+    color: #555;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.mobile-icon:hover {
+    color: #007bff;
+}
+
+/* رسپانسیو - دسکتاپ */
+@media (min-width: 1025px) {
+    .mobile-menu {
+        display: none !important;
+    }
+}
+/* رسپانسیو لبتاب */
+@media (max-width: 1123px) and (min-width: 769px) {
+    .mobile-menu {
+        display: none !important;
+    }
+    .nav-menu li {
+        margin: 0 22px;
+    }
+    .header-container{
+        padding: 10px 60px;
+    }
+    .nav-menu li {
+        margin: 0 15px;
+    }
+}
+/* رسپانسیو - تبلت */
+@media (max-width: 769px) and (min-width: 428px) {
+    .nav-menu {
+        display: none;
+    }
+    
+    .hamburger {
+        display: flex;
+    }
+    
+    .icons {
+        display: flex;
+    }
+    
+    .mobile-menu .mobile-icons {
+        display: none !important;
+    }
+    .header-container{
+        padding: 0 30px;
+    }
+    .icon-item {
+        margin: 0 5px;
+    }
+}
+
+/* رسپانسیو - موبایل */
+@media (max-width: 428px) {
+    .nav-menu, .icons {
+        display: none;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .header-container {
+        padding: 0 15px;
+    }
+
+    .logo img {
+        height: 40px;
+    }
+    
+    .mobile-menu .mobile-icons {
+        display: flex;
+    }
+    .header-container{
+        padding: 0 15px;
+    }
+    .icon-item {
+        margin: 0 0;
+    }
 }

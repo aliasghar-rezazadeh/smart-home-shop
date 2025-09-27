@@ -3,24 +3,20 @@ body {
   font-family: sans-serif;
   font-family: Rokh , Vazir , 'Poppins';
   font-size: 16px;
+  padding: 0 15px;
+}
+.baner-div {
+  height: 324px;
+  width: 559px;
+  padding: 10px 6.5px;
 }
 .baner {
-  height: 610px;
-  background-image: url('./images/scandinavian-interior-mockup-wall-decal-background1.png');
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom;
-  display: flex;
-  align-items: center;
-  padding: 0 60px 0 0;  
+  display: flex;  
 }
 .baner-div{
   font-family: 'Poppins';
-  height: 324px;
-  width: 559px;
-  border-radius: 15px;
-  padding: 80px 50px ;
+  height: 268px;
+  padding: 15px 20px ;
   background-color: #FFF3E3;
   display: flex;
   align-items: flex-end;
@@ -33,14 +29,13 @@ body {
 
 }
 .baner-p2{
-  font-size: 52px;
+  font-size: 42px;
   font-weight: bold;
   color: #b88e2f;
-  width: 405px;
   text-align: end;
 }
 .baner-p3{
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   direction: ltr;
 }
@@ -48,9 +43,9 @@ body {
   font-weight: bold;
   color: #fff;
   background-color: #b88e2f;
-  width: 222px;
-  height: 80px;
-  font-size: 25px;
+  width: 157px;
+  height: 50px;
+  font-size: 20px;
   border: none;
 }
 .browse-the-range{
@@ -72,8 +67,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 20px;
-  margin: 65px 0 60px 0;
+  margin: 65px 15px 60px 15px;
 }
 .categories {
   gap: 32px;
@@ -157,4 +151,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.advertising {
+  margin: 60px 15px;
 }
