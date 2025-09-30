@@ -176,6 +176,8 @@ nav > .nav-menu{
     
     .icons {
         display: flex;
+        position: absolute;
+        right: 541px;
     }
     
     .mobile-menu .mobile-icons {
