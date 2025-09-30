@@ -98,11 +98,6 @@
         padding: 40px 30px;
     }
 }
-/* @media (min-width: 768px) {
-    
-} */
-/* @media (max-width: 2600px) and (min-width: 460px) { */
-/* @media (min-width: 460px) and (max-width: 2600px) { */
 @media (min-width: 769px) and (max-width: 2600px) {
     .footer{
         display: flex;
